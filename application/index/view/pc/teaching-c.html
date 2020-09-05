@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<title>教学特色</title>
+<link rel="stylesheet" type="text/css" href="/static/Pc/css/reset_min.css">
+<link rel="stylesheet" type="text/css" href="/static/Pc/css/index.css">
+<script type="text/javascript" src="/static/Pc/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/Pc/js/index.js"></script>
+</head>
+<body>
+<!--返回顶部-->
+<div class="back-top">
+	<a href="javascript:;" class="iconfont" title="返回顶部">&#xe603;</a>
+</div>
+<!--头部-->
+<div class="header">
+    <div class="center-auto">
+        <div class="logo">
+            <img src="{$logo.logo_top}" />
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/index.php/index/Pc/index">网站首页</a></li>
+                <li>
+                	<a href="/index.php/index/Pc/aboutWe">关于我们</a>
+                </li> 
+                <li class="on">
+                	<a href="/index.php/index/Pc/teaching">
+                    	教学特色<i class="iconfont">&#xe620;</i></a> 
+                    <div class="nav-menu">
+                        <dl>
+                            {volist name='nav' id='list'}
+                            <dd><a href="{$list.nav_src}">{$list.nav_name}</a></dd>
+                            {/volist}
+                        </dl>
+                    </div>                    
+                 </li> 
+                <li>
+                	<a href="/index.php/index/Pc/information?ret_state=0"> 
+                    	教育资讯<i class="iconfont">&#xe620;</i></a>
+                    <div class="nav-menu">
+                        <dl>
+                            {volist name='navTwo' id='list'}
+                            <dd><a href="{$list.nav_src}">{$list.nav_name}</a></dd>
+                            {/volist}
+                        </dl>
+                    </div>                    
+                                       
+                 </li> 
+                <li><a href="/index.php/index/Pc/contactWe">联系我们</a></li> 
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="about-us clearfix">
+	<h4>教学特色</h4>
+</div>
+<div class="tese-tab clearfix">
+    <a href="/index.php/index/Pc/teaching" class="on">全天候，随时可学</a>
+    <a href="/index.php/index/Pc/teachingA">“沉浸式”，外教1对1</a>
+    <a href="/index.php/index/Pc/teachingB">个性化，因材施教</a>
+    <a href="/index.php/index/Pc/teachingC">名师教，保障效果</a>
+</div>
+<div class="news clearfix">
+    <div class="center-auto clearfix">
+        <div class="news-l clearfix fl">
+            <dl>
+                <dd>
+                    <a href="/index.php/index/Pc/news" class="news-img"><img src="/static/Pc/images/pic/t-img-b.jpg" /></a>
+                    <h4><a href="/index.php/index/Pc/news" >mark</a></h4>
+                    <p>国家统计局今天发布的数据显示，2017年全国夏粮总产量14052万吨（2810亿斤），比2016年增产131万吨（26亿斤），增长0.9％。其中谷物产量12948万吨（2590亿斤），比2016年增产87万吨（17亿斤），增长0.7％。根据对全国25个夏粮生产省（区、市）的调查，2017年全国夏粮播种面积27410千公顷（41115万亩），比2016年减少223千公顷（334万亩），减少0.8％</p>
+                    <h5><span>2017-08-02 13:12:12</span><span>admin</span><span><i class="iconfont">&#xe617;</i>222</span></h5>
+                </dd>
+                <dd>
+                    <a href="/index.php/index/Pc/news" class="news-img"><img src="/static/Pc/images/pic/t-img-b.jpg" /></a>
+                    <h4><a href="/index.php/index/Pc/news" >mark</a></h4>
+                    <p>国家统计局今天发布的数据显示，2017年全国夏粮总产量14052万吨（2810亿斤），比2016年增产131万吨（26亿斤），增长0.9％。其中谷物产量12948万吨（2590亿斤），比2016年增产87万吨（17亿斤），增长0.7％。根据对全国25个夏粮生产省（区、市）的调查，2017年全国夏粮播种面积27410千公顷（41115万亩），比2016年减少223千公顷（334万亩），减少0.8％</p>
+                    <h5><span>2017-08-02 13:12:12</span><span>admin</span><span><i class="iconfont">&#xe617;</i>222</span></h5>
+                </dd>
+            </dl>
+        </div>
+        <div class="news-r clearfix fr">
+            <h4><input type="text" placeholder="Search" /><i class="iconfont">&#xe609;</i></h4>                
+            <h5>为您推荐</h5>
+            <div class="tj-wz">
+                <a href="javascript:;">让安全可见更实惠</a>
+                <a href="javascript:;">如何写好文章文章文章测试测试测试测试</a>
+                <a href="javascript:;">让安全可见更实惠</a>
+                <a href="javascript:;">如何写好文章文章文章测试测试测试测试</a>
+                <a href="javascript:;">让安全可见更实惠</a>
+                <a href="javascript:;">如何写好文章文章文章测试测试测试测试</a>
+                <a href="javascript:;">让安全可见更实惠</a>
+            </div>
+        
+        </div>
+    </div>
+</div>
+<!--脚部-->
+<div class="footer">
+	<div class="foot-t clearfix">
+        <div class="foot-t-l">
+        	<h5><img src="{$logo.logo_bottom}" /></h5>
+            <p>{$slo.slogan_content}</p>
+        	<div class="link-icon">
+                <a href="javascript:;" class="iconfont">&#xe611;</a>
+                <a href="javascript:;" class="iconfont qq">&#xe612;</a>
+                <a href="javascript:;" class="iconfont wb">&#xe613;</a>
+            </div>
+        </div> 
+        <div class="foot-t-r">
+			<h6>Contact</h6>
+            <p><i class="iconfont">&#xe634;</i>{$slo.slogan_address}</p>
+            <p><i class="iconfont">&#xe636;</i>{$slo.slogan_phone}</p>
+            <p><i class="iconfont">&#xe635;</i><a href="{$slo.slogan_email_src}">{$slo.slogan_email}</a></p>
+        </div>
+    </div>
+    <div class="foot-b">
+    	<h4>{$slo.slogan_copyright}</h4>
+    	<p>本页面内容为网站演示数据，前台页面内容都可以在后台修改。</p>
+    	<p>{$slo.slogan_edition}<a href="{$slo.slogan_src}">{$slo.slogan_a}</a>{$slo.slogan_number}</p>
+    </div>
+</div>
+</body>
+</html>

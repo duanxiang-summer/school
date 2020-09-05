@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="/static/mobile/css/reset_min.css">
+<link rel="stylesheet" type="text/css" href="/static/mobile/css/index.css">
+<link rel="stylesheet" type="text/css" href="/static/mobile/css/animate.css">
+<script type="text/javascript" src="/static/mobile/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/mobile/js/TouchSlide.1.1.js"></script>
+<script type="text/javascript" src="/static/mobile/js/touch.js"></script>
+<script type="text/javascript" src="/static/mobile/js/index.js"></script>
+<script type="text/javascript" src="/static/mobile/js/wow.js"></script>
+<script>
+wow = new WOW(
+  {
+	animateClass: 'animated',
+	offset: 100,
+  }
+);
+wow.init();
+</script>
+
+
+</head>
+
+
+<body>
+
+<!--返回顶部-->
+<div class="back-top">
+	<span class="iconfont">&#xe603;</span>
+</div>
+
+<!--头部-->
+<header>
+
+    <div class="menu-fl">
+		<span class="menu"></span>
+	</div>
+    
+	<div class="logo"></div>
+    <!--nav弹层-->
+    <div class="nav">
+        <ul>
+            <li class="on"><a href="/index.php/index/Mobile/index">网站首页</a></li>
+            <li><a href="/index.php/index/Mobile/aboutWe">关于我们</a></li>
+            <li>
+            	<a href="/index.php/index/Mobile/teaching">教学特色<i class="iconfont">&#xe615;</i></a>
+                <div class="nav-show">
+                    {volist name='nav' id='list'}
+                    <dd><a href="{$list.nav_src}">{$list.nav_name}</a></dd>
+                    {/volist}
+                </div>
+            </li>
+            <li>
+            	<a href="javascript:;">教育资讯<i class="iconfont">&#xe615;</i></a>
+                <div class="nav-show">
+                    <a href="/index.php/index/Mobile/information">教育资讯</a>
+                    <a href="/index.php/index/Mobile/news">教育新闻</a>
+                </div>
+            </li>
+            <li><a href="/index.php/index/Mobile/contactWe">联系我们</a></li>
+        </ul>
+    </div>
+
+</header>
+
+
+
+<!-- 焦点图-->
+<div id="focus" class="focus">
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="#"><img src="/static/mobile/images/banner.jpg" /></a></li>
+                <li><a href="#"><img src="/static/mobile/images/banner.jpg" /></a></li>
+                <li><a href="#"><img src="/static/mobile/images/banner.jpg" /></a></li>
+            </ul>
+        </div>
+</div> 
+<script type="text/javascript">
+    TouchSlide({ 
+        slideCell:"#focus",
+        titCell:".hd ul", //开启自动分页 autoPage:true 
+        mainCell:".bd ul", 
+        effect:"leftLoop", 
+        autoPlay:true,//自动播放
+        autoPage:true //自动分页
+    });
+</script>
+  
+   
+ 
+<h5 class="item-title clearfix wow fadeInUp animated">
+	<p>大品牌，值得信赖</p>
+    <div class="h-line clearfix"></div>
+    <span>中国首家语言一对一教学模式引进机构，16年来我们只做一件事 语言培训！良好的社会声誉和专业口碑值得您携手全程信赖！</span>
+</h5>
+
+
+
+<div class="item-list clearfix">
+	<ul>
+    	<li class="wow fadeInLeft animated">
+        	<a href="/index.php/index/Mobile/teaching">
+            	<h6 class="iconfont">&#xe631;</h6>
+                <h5>全天候，随时可学</h5>
+                <p>这是一场学习方式的革命。不用再跑培训班，待在家里，走在路上，在你能挤出的任何闲暇时间里，随时随地，轻轻松松就学一口流利英语！</p>
+            </a>
+        </li>
+    	<li class="wow fadeInRight animated">
+        	<a href="/index.php/index/Mobile/teaching">
+            	<h6 class="iconfont">&#xe632;</h6>
+                <h5>全天候，随时可学</h5>
+                <p>这是一场学习方式的革命。不用再跑培训班，待在家里，走在路上，在你能挤出的任何闲暇时间里，随时随地，轻轻松松就学一口流利英语！</p>
+            </a>
+        </li>
+    	<li class="wow fadeInLeft animated">
+        	<a href="/index.php/index/Mobile/teaching">
+            	<h6 class="iconfont">&#xe633;</h6>
+                <h5>全天候，随时可学</h5>
+                <p>这是一场学习方式的革命。不用再跑培训班，待在家里，走在路上，在你能挤出的任何闲暇时间里，随时随地，轻轻松松就学一口流利英语！</p>
+            </a>
+        </li>
+    	<li class="wow fadeInRight animated">
+        	<a href="/index.php/index/Mobile/teaching">
+            	<h6 class="iconfont">&#xe630;</h6>
+                <h5>全天候，随时可学</h5>
+                <p>这是一场学习方式的革命。不用再跑培训班，待在家里，走在路上，在你能挤出的任何闲暇时间里，随时随地，轻轻松松就学一口流利英语！</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<h5 class="item-title clearfix wow fadeInLeft animated">
+	<p>优秀的师资能力</p>
+    <div class="h-line clearfix"></div>
+    <span>全球招聘，初试通过率为10%，，面授培训后最终通过率仅为8%。 职业素养、语言能力、学科知识、教学技能，儿童心理缺一不可！ 对教师严格筛选是教学品质的保障！ 纯正口语、情感丰富、性格开朗，教师都有一颗爱孩子的心！</span>
+</h5>
+
+
+<div class="waijiao clearfix">
+    <h5 class="item-title clearfix item-title-a">
+        <p>外教1对1 给孩子提供“沉浸式”的英语环境</p>
+        <div class="h-line clearfix"></div>
+        <span>基于3-15岁年龄段孩子的语言能力、认知发展和兴趣，参考欧洲语言标准（CEFR），同步欧美最新课程框架，精心研发出适合中国孩子的英语学习课程，在语言学习的关键期，通过和专业外教1对1沉浸式学习，真正像母语一样习得英语，让孩子使用英语思考，英语随时随地脱口而出。</span>
+    </h5>
+    
+    <div class="waijiao-img">
+    	<a href="javascript:;">
+        	<img src="/static/mobile/images/show.jpg"  />
+        	<h4>做孩子永远的镜子</h4>
+        </a>    
+    </div>
+    <h3>中班活动区“小医院”，“小护士”筱筱忙得不亦乐乎，但是“小护士”却把“药品”弄得东倒西歪。我发现后多</h3>
+    
+    <div class="waijiao-img">
+    	<a href="javascript:;">
+        	<img src="/static/mobile/images/show.jpg"  />
+        	<h4>做孩子永远的镜子</h4>
+        </a>    
+    </div>
+    <h3>中班活动区“小医院”，“小护士”筱筱忙得不亦乐乎，但是“小护士”却把“药品”弄得东倒西歪。我发现后多</h3>
+    
+
+
+</div>
+
+
+
+ 
+ 
+
+<!--脚部-->
+<div class="footer">
+	<div class="foot-t clearfix">
+    
+    
+        <div class="foot-t-l">
+        	<h5><img src="/static/images/logo.png" /></h5>
+            <p>自2007年进入中国市场以来，备受孩子和家长的青睐，经过长达八年的努力，我们为中国不同年龄段的孩子创造与国际先进标准同步的教育体系。</p>
+        	<div class="link-icon">
+                <a href="javascript:;" class="iconfont">&#xe611;</a>
+                <a href="javascript:;" class="iconfont qq">&#xe612;</a>
+                <a href="javascript:;" class="iconfont wb">&#xe613;</a>
+            </div>
+        </div> 
+        
+
+        <div class="foot-t-r">
+			<h6>Contact</h6>
+            <p><i class="iconfont">&#xe634;</i>广州市天河区燕岭路120号</p>
+            <p><i class="iconfont">&#xe636;</i>020-888888</p>
+            <p><i class="iconfont">&#xe635;</i><a href="javascript:;">618@qq.com</a></p>
+        </div>
+        
+
+
+    </div>
+
+
+    <div class="foot-b">
+    	<h4>培训教育公司 版权所有© 2008-2016 </h4>
+        <p>本页面内容为网站演示数据，前台页面内容都可以在后台修改。</p>
+        <p>Powered by<a href="javascript:;">hx</a>8.4.12</p>
+    </div>
+</div>
+
+
+   
+        
+</body>
+</html>
